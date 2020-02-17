@@ -1,0 +1,14 @@
+actor: AcceptanceTester
+modules:
+    enabled:
+        #- PhpBrowser:
+        - WebDriver:
+            url: 'https://google.com/'
+            browser: chrome
+            port: 9515
+            window_size: 'false'
+            capabilities:
+                goog:chromeOptions:
+                    args: ["--headless", "--disable-gpu"]
+                   
+        - \Helper\Acceptance    

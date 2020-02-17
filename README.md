@@ -1,2 +1,4 @@
 # codeception-with-github-actions
-A sample code to run codeception test cases with Github Actions
+## Introduction
+This repo is just a sample to run codeception test cases with GitHub actions
+
