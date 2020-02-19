@@ -14,7 +14,7 @@ jobs:
       run:  composer install 
       
     - name: Run chromedriver
-      run:  nohup $CHROMEWEBDRIVER --url-base=/wd/hub /dev/null 2>&1 &
+      run:  nohup $CHROMEWEBDRIVER/chromedriver --url-base=/wd/hub /dev/null 2>&1 &
        
     - name: Run test cases
       run:  php vendor/bin/codecept run acceptance --steps
